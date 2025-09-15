@@ -2,7 +2,7 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
-	let dinosaur = (data as any).dinosaur as { name: string; description: string };
+	let dinosaur = data.dinosaur;
 </script>
 
 <div>
